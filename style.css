@@ -1,0 +1,36 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+  background: #222;
+  color: white;
+}
+
+#chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 80px);
+  grid-template-rows: repeat(8, 80px);
+  margin: 20px auto;
+  width: 640px;
+  border: 4px solid white;
+}
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.light {
+  background-color: #f0d9b5;
+}
+
+.dark {
+  background-color: #b58863;
+}
+
+.selected {
+  outline: 3px solid red;
+}
